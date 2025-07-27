@@ -22,7 +22,6 @@ def main():
         else:
             print("Invalid unit. Please enter 'C' or 'F'.")
     except ValueError:
-        print("Invalid input. Please enter a valid number.")
-
+      print("Invalid temperature. Please enter a numeric value.")
 if __name__ == "__main__":
     main()
