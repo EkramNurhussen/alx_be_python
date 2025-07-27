@@ -10,7 +10,7 @@ def celsius_to_fahrenheit(celsius):
 def fahrenheit_to_celsius(fahrenheit):
     return (fahrenheit - FAHRENHEIT_OFFSET) * FAHRENHEIT_TO_CELSIUS_FACTOR
 
-# Main logic
+# Main logic with user interaction
 def main():
     try:
         temp = float(input("Enter the temperature to convert: "))
@@ -21,10 +21,11 @@ def main():
             print(f"{temp:.1f}°F is {result:.15f}°C")
         elif unit == "C":
             result = celsius_to_fahrenheit(temp)
-            print(f"{temp:.1f}°C is {result:.1f}°F")
+            print(f"{temp:.1f}°C is {result:.15f}°F")
         else:
             print("Invalid unit. Please enter 'C' or 'F'.")
     except ValueError:
         print("Invalid input. Please enter a valid number.")
 
 if __name__ == "__main__":
+    main()
