@@ -1,16 +1,13 @@
-# Global conversion factors
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
 FAHRENHEIT_OFFSET = 32
 
-# Conversion functions
 def celsius_to_fahrenheit(celsius):
     return celsius * CELSIUS_TO_FAHRENHEIT_FACTOR + FAHRENHEIT_OFFSET
 
 def fahrenheit_to_celsius(fahrenheit):
     return (fahrenheit - FAHRENHEIT_OFFSET) * FAHRENHEIT_TO_CELSIUS_FACTOR
 
-# Main logic with user interaction
 def main():
     try:
         temp = float(input("Enter the temperature to convert: "))
